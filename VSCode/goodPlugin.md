@@ -1,6 +1,18 @@
 # VSCode Good Plugin
 更新时间: 2018.06.05
 
+目录
+---
+
+<!-- TOC depthFrom:2 updateOnSave:true -->
+
+- [编辑类](#编辑类)
+- [代码类](#代码类)
+- [文件类](#文件类)
+
+<!-- /TOC -->
+
+
 ## 编辑类
 
 + vscode

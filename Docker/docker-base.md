@@ -1,8 +1,29 @@
 # Docker知识
 更新时间: 2018.06.05
 
+目录
+---
 
-## 基础操作
+<!-- TOC depthFrom:2 updateOnSave:true -->
+
+- [基础](#基础)
+    - [镜像](#镜像)
+    - [容器](#容器)
+    - [全局](#全局)
+- [进阶](#进阶)
+    - [关于docker的网络](#关于docker的网络)
+    - [关于docker的架构](#关于docker的架构)
+- [应用实例](#应用实例)
+    - [gitlab](#gitlab)
+    - [MYSQL](#mysql)
+    - [TOMCAT](#tomcat)
+    - [REDIS](#redis)
+    - [NGINS](#ngins)
+    - [负载均衡](#负载均衡)
+
+<!-- /TOC -->
+
+## 基础
 
 ### 镜像
 
@@ -137,11 +158,25 @@
 ### gitlab
 
 + 拉取镜像
-```shell
+```sh
 docker pull gitlab/gitlab-ce
 ```
 
 + 配置启动
+
+```sh
+sudo docker run -d \
+    --hostname gitlab.example.com \
+    -p 20443:443 
+    -p 20080:80 
+    -p 20022:22 \
+    --name gitlab \
+    --restart always \
+    --volume $PWD/gitlab/config:/etc/gitlab \
+    --volume $PWD/gitlab/logs:/var/log/gitlab \
+    --volume $PWD/gitlab/data:/var/opt/gitlab \
+    gitlab/gitlab-ce:latest
+```
 
 ### MYSQL
 

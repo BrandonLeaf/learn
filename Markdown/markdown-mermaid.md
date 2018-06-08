@@ -1,5 +1,15 @@
 # Markdown-mermaid
 更新时间: 2018.06.05
+
+目录
+---
+
+<!-- TOC depthFrom:2 updateOnSave:true -->
+
+- [甘特图](#甘特图)
+
+<!-- /TOC -->
+
 ## 甘特图
 
 ```mermaid
