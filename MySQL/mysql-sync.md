@@ -125,7 +125,7 @@
         ```sql
         set global sql_slave_skip_counter =1;
         ```
-
+        
     1. 从库启动同步
 
         ```sql
@@ -152,40 +152,31 @@
     适用于主从库数据相差较大，或者要求数据完全统一的情况
 
 + 步骤
-    1. 主库锁表
 
-        进入MySQL客户端
+    1. 主库锁表
         ```sql
+        --进入MySQL客户端
         flush tables with read lock; 
         ```
-    
-    1. 主库备份数据
-
-        退出MySQL客户端
-        
+    2. 主库备份数据
         ```sh
+        --退出MySQL客户端
         mysqldump -uroot -p --all-databases > mysql.bak.sql 
         ```
-        
         ps:找个大点的分区导
-        
     3. 主库传送数据到从库
-
         ```sh
         scp mysql.bak.sql mysql@192.168.1.11:/mysqlData/dbtmep
         ```
-    5. 从库停止同步状态
-
+    4. 从库停止同步状态
         ```sql
         stop slave;
         ```
-    7. 从库导入备份数据
-
+    5. 从库导入备份数据
         ```sql
         source /mysqlData/dbtmep/mysql.bak.sql 
         ```
-    1. 从库设置同步
-
+    6. 从库设置同步
         + 需要重设slave
             ```sql
             reset slave;
@@ -202,19 +193,14 @@
             master_log_pos=679831629;--主机中show master status获取
             ```
         + 开启同步
-
             ```sql
             start slave;
             ```
-            
-    1. 从库查询同步状态
-
+    7. 从库查询同步状态
          ```sql
         show slave status;
         ```
-        
         显示如下即同步成功
-        
         ```
         Slave_IO_Running: Yes 
         Slave_SQL_Running: Yes 
