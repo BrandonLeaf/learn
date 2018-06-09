@@ -13,36 +13,36 @@
 
 ## 相关语句
 + 查看主库状态
-```sql
-show master status;
-```
+    ```sql
+    show master status;
+    ```
 + 查看从库状态
-```sql
-show slave status;
-```
+    ```sql
+    show slave status;
+    ```
 + 查询只读状态
-```sql
-show global variables like "%read_only%";
-```
+    ```sql
+    show global variables like "%read_only%";
+    ```
 + 设置只读状态
-```sql
-#取消只读状态
-set global read_only=0;
-#设置只读状态
-set global read_only=1;
-```
+    ```sql
+    #取消只读状态
+    set global read_only=0;
+    #设置只读状态
+    set global read_only=1;
+    ```
 
 + 建立主从联系
-```sql
---在从机中执行
-change master to 
-master_host='192.168.1.10',--主机IP
-master_port=3306,--主机mysql端口
-master_user='slave',--主机建立的用户
-master_password='123123',
-master_log_file='bin.000140',--从主机中show master status获取
-master_log_pos=679831629;--从主机中show master status获取
-```
+    ```sql
+    --在从机中执行
+    change master to 
+    master_host='192.168.1.10',--主机IP
+    master_port=3306,--主机mysql端口
+    master_user='slave',--主机建立的用户
+    master_password='123123',
+    master_log_file='bin.000140',--从主机中show master status获取
+    master_log_pos=679831629;--从主机中show master status获取
+    ```
 
 ## 用例环境说明
 

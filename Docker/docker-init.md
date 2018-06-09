@@ -6,20 +6,22 @@
 
 + 配置国内镜像
 
-```sh
-sudo vi /etc/docker
-{ 
-“registry-mirrors”: [“https://registry.docker-cn.com“] 
-}
-```
+    ```sh
+    sudo vi /etc/docker
+    { 
+    “registry-mirrors”: [“https://registry.docker-cn.com“] 
+    }
+    ```
+    
 + 重启
-```sh
-systemctl daemon-reload 
-systemctl restart docker
-```
+
+    ```sh
+    systemctl daemon-reload 
+    systemctl restart docker
+    ```
 
 + 加入docker 用户组
 
-```sh
-sudo gpasswd -a ${USER} docker
-```
+    ```sh
+    sudo gpasswd -a ${USER} docker
+    ```

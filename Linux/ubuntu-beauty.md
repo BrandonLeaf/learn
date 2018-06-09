@@ -44,37 +44,38 @@ chsh -s /bin/zsh
     + [MacOS High Sierra](https://www.opendesktop.org/s/Gnome/p/1013714/)
 
 1. dock
-    > 打开Ubuntu Software，直接搜索 dash to dock，安装上
+    + 打开Ubuntu Software，直接搜索 dash to dock，安装上
 
 ## 主题相关文件路径
 
 + 主题包存放路径
-```sh
-/usr/share/themes
-/usr/share/icons
-/usr/share/fonts
-```
+
+    ```sh
+    /usr/share/themes
+    /usr/share/icons
+    /usr/share/fonts
+    ```
 
 ## 开机动画
 
 + 动画包路径
-```sh
-/usr/share/plymouth/themes/
-```
+    ```sh
+    /usr/share/plymouth/themes/
+    ```
 
 + 修改配置文件(先备份)
 
-```sh
-/etc/alternatives/default.plymouth
-```
+    ```sh
+    /etc/alternatives/default.plymouth
+    ```
 + 修改[script]内文件路径
-```sh
-[Plymouth Theme]
-Name=Ubuntu Logo
-Description=A theme that features a blank background with a logo.
-ModuleName=script
+    ```sh
+    [Plymouth Theme]
+    Name=Ubuntu Logo
+    Description=A theme that features a blank background with a logo.
+    ModuleName=script
 
-[script]
-ImageDir=/usr/share/plymouth/themes/ubuntu-logo
-ScriptFile=/usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.script
-```
+    [script]
+    ImageDir=/usr/share/plymouth/themes/ubuntu-logo
+    ScriptFile=/usr/share/plymouth/themes/ubuntu-logo/ubuntu-logo.script
+    ```

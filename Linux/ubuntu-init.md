@@ -107,30 +107,30 @@ export PATH=$GRADLE_HOME/bin:$PATH
 #### 方法一
 + [下载rpm包](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
     + 安装依赖
-    ```sh
-    sudo apt-get install tar
-    sudo apt-get install alien
-    ```
+        ```sh
+        sudo apt-get install tar
+        sudo apt-get install alien
+        ```
     + 转换rpm,并安装deb
-    ```sh
-    sudo alien -cv sqldeveloper-2.1.1.64.45-1.noarch.rpm
-    sudo dpkg -i sqldeveloper_2.1.1.64.45-2_all.deb
-    ```
+        ```sh
+        sudo alien -cv sqldeveloper-2.1.1.64.45-1.noarch.rpm
+        sudo dpkg -i sqldeveloper_2.1.1.64.45-2_all.deb
+        ```
 #### 方法二
 
 + [下载OracleSQL Developer for other platforms](http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html)
     + 解压
-    ```sh
-    unzip
-    ```
+        ```sh
+        unzip
+        ```
     + 添加JAVA_HOME路径
-    ```sh
-    vi sqldeveloper/ide/bin/launcher.sh
-    if["X$APP_JAVA_HOME"!="X" ]
-    then
-        if [!-d${APP_JAVA_HOME} ]
+        ```sh
+        vi sqldeveloper/ide/bin/launcher.sh
+        if["X$APP_JAVA_HOME"!="X" ]
         then
-        APP_JAVA_HOME="/home/xxx/jdk1.8.0_45"
+            if [!-d${APP_JAVA_HOME} ]
+            then
+            APP_JAVA_HOME="/home/xxx/jdk1.8.0_45"
+            fi
         fi
-    fi
-    ```
+        ```
