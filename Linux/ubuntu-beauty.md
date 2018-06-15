@@ -19,6 +19,10 @@
 + [GNMOE主题库](https://www.opendesktop.org/s/Gnome/browse/)
 + [GNMOE插件库](https://extensions.gnome.org/)
 
+* 参考文章
+
+    * [Ubuntu18.04（Gnome桌面）主题美化，Mac私人定制](https://blog.csdn.net/zyqblog/article/details/80152016#11-%E4%BD%95%E4%B8%BAgnome-shell-extensions-%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BA%94%E7%94%A8)
+
 ## Terminal 美化
 
 ```sh
@@ -38,6 +42,19 @@ chsh -s /bin/zsh
     ```sh
     sudo apt install gnome-tweak-tool
     sudo apt install gnome-shell-extensions
+    ```
+
+1. 插件安装
+
+    浏览器下载插件
+    ![浏览器下载插件](img/linux-1.png)
+
+    安装插件后出现以下提示
+    ![安装后提示](img/linux-2.png)
+
+    安装chrome-gnome-shell插件
+    ```sh
+    sudo apt install chrome-gnome-shell
     ```
 
 1. 主题包
