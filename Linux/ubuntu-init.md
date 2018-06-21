@@ -1,5 +1,5 @@
 # Ubuntu 18.04 安装后
-更新时间: 2018.06.06
+更新时间: 2018.06.21
 
 目录
 ---
@@ -54,6 +54,16 @@ sudo apt install ibus-pinyin
     3. [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
     4. [VSCode](https://code.visualstudio.com/)
     5. [idea](https://www.jetbrains.com/idea/)
+    6. [Chrome](https://www.google.cn/chrome/)
+
+### Chrome
+
+```sh
+#安装依赖
+sudo apt install libappindicator1 libindicator7
+#官网下载安装包安装
+sudo dpkg -i chrome.deb
+```
 
 ### git
 
