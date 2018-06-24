@@ -144,3 +144,19 @@ export PATH=$GRADLE_HOME/bin:$PATH
             fi
         fi
         ```
+
+
+### idea 模块加载失败问题决绝
+
+问题显示如下
+```
+➜  bin ./idea.sh 
+Gtk-Message: 12:06:40.985: Failed to load module "unity-gtk-module"
+Gtk-Message: 12:06:40.986: Failed to load module "canberra-gtk-module"
+```
+
+决绝方案
+```sh 
+sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+sudo apt-get install unity-gtk2-module unity-gtk3-module 
+```
