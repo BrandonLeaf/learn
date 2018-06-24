@@ -1,5 +1,5 @@
 # Docker 安装与使用
-更新时间:2018.06.08
+更新时间:2018.06.24
 
 + 参考官网安装 
     + [点击查看官网](https://docs.docker.com/install/)
@@ -7,9 +7,9 @@
 + 配置国内镜像
 
     ```sh
-    sudo vi /etc/docker
+    sudo vi /etc/docker/daemon.json
     { 
-    “registry-mirrors”: [“https://registry.docker-cn.com“] 
+    "registry-mirrors": ["https://registry.docker-cn.com"] 
     }
     ```
     
