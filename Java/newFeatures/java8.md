@@ -3,7 +3,7 @@
 
 <!-- TOC depthFrom:2 updateOnSave:true -->
 
-- [Lambda表达式和函数式接口](#lambda表达式和函数式接口)
+- [Lambda表达式](#lambda表达式)
 - [函数式接口](#函数式接口)
     - [@FunctionalInterface](#functionalinterface)
     - [Predicate接口](#predicate接口)
@@ -48,7 +48,7 @@
 * [java5、java6、java7、java8的新特性](https://blog.csdn.net/samjustin1/article/details/52268004)
 
 
-## Lambda表达式和函数式接口
+## Lambda表达式
 
 示例
 ```java
