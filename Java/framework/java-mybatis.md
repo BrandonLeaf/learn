@@ -10,6 +10,8 @@
 
 <!-- /TOC -->
 
+---
+
 ## 初始化配置
 
 使用SqlSessionFactoryBean初始化MyBatis配置文件
