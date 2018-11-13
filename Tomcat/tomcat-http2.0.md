@@ -2,6 +2,20 @@ Tomcat 配置HTTP2.0 与 APR运行模式
 ===
 更新时间:2018.11.13
 
+目录
+---
+<!-- TOC depthFrom:2 updateOnSave:true -->
+
+- [参考文章](#参考文章)
+- [证书生成](#证书生成)
+- [https & http2.0 配置 默认nio处理模式](#https--http20-配置-默认nio处理模式)
+- [开启apr处理模式](#开启apr处理模式)
+- [安装apr,native](#安装aprnative)
+    - [修改tomcat](#修改tomcat)
+- [http 自动跳转 https](#http-自动跳转-https)
+
+<!-- /TOC -->
+
 ## 参考文章
 
 * [Tomcat9 配置HTTPS连接](https://blog.csdn.net/u013360850/article/details/70665312)
@@ -45,7 +59,7 @@ vi apache-tomcat-9.0.8/conf/server.xml
 
 ## 开启apr处理模式
 
-### 修改tomcat
+## 安装apr,native
 
 安装编译工具
 ```sh
@@ -63,7 +77,7 @@ sudo apt-get install libapr1-dev libssl-dev apt-file ant
 
 sudo make && sudo make install
 ```
-
+### 修改tomcat
 
 vi apache-tomcat-9.0.8/bin/catalina.sh
 
