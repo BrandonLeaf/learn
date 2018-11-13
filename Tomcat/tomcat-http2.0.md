@@ -11,6 +11,8 @@ Tomcat 配置HTTP2.0 与 APR运行模式
 * [Java 9 和Spring Boot 2.0纷纷宣布支持的HTTP/2到底是什么？](http://ju.outofmemory.cn/entry/346601)
 * [Spring Boot 2.0中嵌入式Web容器（如Tomcat）对HTTP2的支持详解](https://blog.csdn.net/taiyangdao/article/details/80977910)
 * [HTTP2.0 介绍以及ngnix、tomcat下如何配置](https://blog.csdn.net/qq_16320025/article/details/79495469)
+* [Tomcat Connector三种运行模式（BIO, NIO, APR）的比较和优化](https://www.cnblogs.com/nb-blog/p/5278933.html)
+
 
 ## 证书生成
 
